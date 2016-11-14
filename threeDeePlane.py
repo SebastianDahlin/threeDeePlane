@@ -59,6 +59,10 @@ horLineList = init_hor_lines(screenWidth, screenHeight, horisontalSteps)
 while __name__=="__main__":
     #Render a black background
     screen.fill((0,0,0))
+    #Draw a sun
+    pygame.draw.circle(screen, (255, 255, 255),(int(screenWidth/2),25+int(screenHeight/2)), 100, 1)
+    #Cover the ground with a filled rectangle
+    pygame.draw.rect(screen, (0,0,0),(0,screenHeight/2,screenWidth, screenHeight))
     #Draw the vertical lines
     ##Start with the horizon
     pygame.draw.line(screen, (255,255,255),(0,screenHeight/2),(screenWidth,screenHeight/2),1)
