@@ -6,7 +6,6 @@ import math
 import time
 import random
 import sys
-global multi
 ##---------Set this to something fun---------**
 #Screen height and width
 SW = 1000
